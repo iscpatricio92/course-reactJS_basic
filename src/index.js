@@ -5,6 +5,7 @@ import App from "./App";
 import UseEffectComponent from "./UseEffectComponent";
 import reportWebVitals from "./reportWebVitals";
 import ConditionalRender from "./ConditionalRender";
+import ListAndKeys from "./Lists";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,8 @@ root.render(
     <hr />
     <h2>Conditional Render</h2>
     <ConditionalRender />
+    <hr />
+    <ListAndKeys />
     <hr />
   </React.StrictMode>
 );
