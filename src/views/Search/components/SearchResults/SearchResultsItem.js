@@ -1,10 +1,10 @@
+import  React from "react";
 export default function SearchResultsItem({ id, name, email }) {
   return (
     <div
       style={{
         backgroundColor: "#E8E7E7",
-        marginTop: 5,
-        marginBottom: 5,
+        margin:20,
         padding: 10,
       }}
     >

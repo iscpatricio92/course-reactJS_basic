@@ -1,4 +1,4 @@
-import { useState } from "react";
+import  React, {useState} from "react";
 import "./style.css";
 export default function SearchBox({ onSearch, onClose, isSearching }) {
   const [searchText, setsearchText] = useState("");

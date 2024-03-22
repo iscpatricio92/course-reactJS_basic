@@ -1,6 +1,7 @@
-import Search from "./views/Search";
+import React from "react";
+import RoutersApp from './routes'
 
 
-const App = () => <Search/>
+const App = () => <RoutersApp />
 
 export default App;
