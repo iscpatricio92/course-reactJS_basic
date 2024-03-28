@@ -1,4 +1,23 @@
-import React from "react";
-export default function Home(){
-    return(<p>Home</p>)
+import React, { useContext, useEffect } from "react";
+import PokemonsContext from "../../context/pokemons";
+import PokemonList from "./components/PokemonList";
+import Loading from "../../components/Loading";
+import ErrorMessage from "../../components/ErrorMessage";
+export default function Home() {
+  const { getPokemons, pokemons, isLoading, hasError, errorMessage } =
+    useContext(PokemonsContext);
+  useEffect(() => {
+    getPokemons().catch(null);
+  }, []);
+  if (isLoading) return <Loading title="Pokemons Loading" />;
+
+  return (
+    <>
+      {hasError ? (
+        <ErrorMessage message={errorMessage} />
+      ) : (
+        <PokemonList pokemons={pokemons} />
+      )}
+    </>
+  );
 }

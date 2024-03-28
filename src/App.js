@@ -1,7 +1,11 @@
 import React from "react";
-import RoutersApp from './routes'
+import RoutersApp from "./routes";
+import PokemonsProvider from "./context/pokemons/Provider";
 
-
-const App = () => <RoutersApp />
+const App = () => (
+  <PokemonsProvider>
+    <RoutersApp />
+  </PokemonsProvider>
+);
 
 export default App;
