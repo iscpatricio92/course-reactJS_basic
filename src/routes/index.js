@@ -4,7 +4,7 @@ import Home from "../views/Home";
 import FourOFour from "../views/404";
 import Search from "../views/Search";
 import PokeDetail from "../views/PokeDetail";
-import ScrollToTop from "../componentes/ScrollToTop";
+import ScrollToTop from "../components/ScrollToTop";
 export default function RoutesApp() {
 
   return (
